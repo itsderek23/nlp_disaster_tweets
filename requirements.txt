@@ -14,4 +14,6 @@ ipykernel # load venv in jupyter notebooks
 
 # notebook requirements
 pipreqs
+kaggle
 -r notebooks/requirements.txt
+dvc
