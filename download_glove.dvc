@@ -1,0 +1,11 @@
+md5: 2b90c919d3a8b10c8c35877e5ac247d1
+cmd: src/data/download_glove.sh
+deps:
+- md5: 33c89bf95c08af8936dfd6c88347ccd0
+  path: src/data/download_glove.sh
+outs:
+- md5: dd7f3ad906768166883176d69cc028de
+  path: data/raw/glove.6B.100d.txt
+  cache: true
+  metric: false
+  persist: false
