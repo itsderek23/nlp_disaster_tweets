@@ -1,13 +1,18 @@
-md5: 454bc25ede2c5a7214fc7d56b5ce0f26
+md5: 3967a5a423050866508a370c7a4997b1
 cmd: invoke notebooks.run notebooks/prepare_train.ipynb
 deps:
 - md5: 674b1b7ac5c3034b5bf38227f59326cd.dir
   path: data/raw
-- md5: c62ea0b3b9bdb93898485dd589567b9b
+- md5: 02990849d080b41f680ff672f7aecfce
   path: notebooks/prepare_train.ipynb
 outs:
-- md5: 1b2d9633e970d2fda1796888f012e225
-  path: data/processed/submission.csv
+- md5: 55cb48d7e6e8b529cb4045ce9e1b3a53
+  path: models/model.h5
+  cache: true
+  metric: false
+  persist: false
+- md5: 6fc1f4c0640516ef0a000f088958d621
+  path: models/tokenizer.pickle
   cache: true
   metric: false
   persist: false
