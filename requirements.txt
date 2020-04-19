@@ -18,3 +18,4 @@ kaggle
 -r notebooks/requirements.txt
 dvc[s3]
 invoke
+nbconvert
