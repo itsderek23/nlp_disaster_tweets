@@ -1,12 +1,12 @@
-md5: 1402a7d19e6e0dccb9d72a606d1a1b47
-cmd: invoke notebooks.run notebooks/basic-eda-cleaning-and-glove.ipynb
+md5: 454bc25ede2c5a7214fc7d56b5ce0f26
+cmd: invoke notebooks.run notebooks/prepare_train.ipynb
 deps:
 - md5: 674b1b7ac5c3034b5bf38227f59326cd.dir
   path: data/raw
-- md5: e6fb6dc60c7d4c1df20f71223466ef97
-  path: notebooks/basic-eda-cleaning-and-glove.ipynb
+- md5: c62ea0b3b9bdb93898485dd589567b9b
+  path: notebooks/prepare_train.ipynb
 outs:
-- md5: 496b45e0a7f07b474c6f666f456bda66
+- md5: 1b2d9633e970d2fda1796888f012e225
   path: data/processed/submission.csv
   cache: true
   metric: false
