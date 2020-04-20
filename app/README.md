@@ -36,10 +36,15 @@ curl --location --request POST 'http://localhost:5000/predict' \
 
 ## Deploying to Heroku
 
+From the project root:
+
 ```
-heroku create -a app
-heroku buildpacks:add -a app https://github.com/heroku/heroku-buildpack-multi-procfile
+APP_NAME=nlp-disaster-tweets
+heroku create -a $APP_NAME
+heroku buildpacks:add -a $APP_NAME https://github.com/heroku/heroku-buildpack-multi-procfile
 heroku buildpacks:add heroku/python
 heroku config:set PROCFILE=app/Procfile
 git push heroku master
 ```
+
+Substitute `nlp-disaster-tweets` with your own unique application name.
