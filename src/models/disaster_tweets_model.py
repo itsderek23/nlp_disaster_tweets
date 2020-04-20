@@ -16,4 +16,6 @@ class DisasterTweetsModel:
     def predict(self,texts):
         sequences = self.tokenizer.texts_to_sequences(texts)
         processed_texts = pad_sequences(sequences,maxlen=MAX_LEN,truncating='post',padding='post')
-        return self.model.predict(processed_texts)
+        result = self.model.predict(processed_texts)
+        print(texts,result)
+        return result
