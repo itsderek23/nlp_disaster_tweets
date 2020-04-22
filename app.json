@@ -11,7 +11,8 @@
     }
   ],
   "env": {
-    "PROCFILE": "app/Procfile"
+    "PROCFILE": "app/Procfile",
+    "GUNICORN_CMD_ARGS": "--workers=1"
   },
   "formation": {
     "web": {
