@@ -1,0 +1,27 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-multi-procfile"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "PROCFILE": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "nlp_disaster_tweets",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
