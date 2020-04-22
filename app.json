@@ -11,9 +11,7 @@
     }
   ],
   "env": {
-    "PROCFILE": {
-      "required": true
-    }
+    "PROCFILE": "app/Procfile"
   },
   "formation": {
     "web": {
