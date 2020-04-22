@@ -1,2 +1,4 @@
 [core]
-    remote = s3_remote
+    remote = s3_http
+['remote "s3_http"']
+    url = https://dvc-booklet.s3.amazonaws.com/nlp_disaster_tweets/
