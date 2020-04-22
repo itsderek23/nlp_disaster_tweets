@@ -16,7 +16,6 @@ model = DisasterTweetsModel()
 def predict():
     texts = flask.request.json['data']
     result = model.predict(texts)
-    sys.stdout.flush()
     return flask.jsonify(result.tolist())
 
 if __name__ == "__main__":
